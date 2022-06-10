@@ -1,0 +1,82 @@
+body {
+    background-image: url("/static/given-images/nza_background.jpg") ;
+}
+
+.container { 
+    max-width: 1000px;
+    margin: 0px auto;
+    background-color: white;
+}
+
+/* HEADER START /*
+/* NAVIGATION START */
+.sign-in { 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.word-print-banner img{ 
+    max-width: 100%;
+}
+
+nav ul{ 
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+}
+
+nav a { 
+    justify-content: space-between;
+}
+
+/* NAVIGATION END */
+
+
+
+
+
+
+/* HEADER END /*
+
+.footer { 
+
+}
+
+
+/* UTILITIES */ 
+
+
+.row { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
+/* h2 { 
+    
+} */
+
+/* h3 { 
+    
+} */
+
+a { 
+ text-decoration: none;   
+}
+/* 
+a:hover { 
+    
+} */
+
+
+/* 
+.img-grid{ 
+    
+} */
+/* 
+.flex-row { 
+
+} */
