@@ -83,8 +83,30 @@ nav a {
     width: 100%;
 }
 
+.content-side-grid { 
+    display: block;
+}
 
+.sidebar { 
+    float: left;
+    background-color: #90332D;
+    width: 25%;
+}
 
+.content { 
+    float: right;
+    background-color: aquamarine;
+    width: 70%;
+}
+
+.page-title{ 
+    max-width:60%;
+}
+
+.page-title img { 
+    
+    width: 75%;
+}
 /* h2 { 
     
 } */
