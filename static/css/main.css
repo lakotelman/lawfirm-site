@@ -79,6 +79,27 @@ nav a {
 .nav-divider { 
     color: rgb(192, 192, 192);
 }
+@media only screen and (min-width:600px){ 
+    .row { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    nav ul { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .nav-divider { 
+        display: none;
+    }
+
+}
 /* NAVIGATION END */
 /* HEADER END */
 
@@ -109,12 +130,7 @@ footer hr {
 
 /* UTILITIES BEGIN */ 
 
-.row { 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
+
 
 /* UTILITIES END */
 
@@ -174,7 +190,7 @@ footer hr {
     height: 150px;
     background-image: url(/static/higher-res-images/attorneyspagetitleimage.jpg);
     background-size: cover;
-    background-position-y: 250px;
+    background-position: 50%;
     outline-style: double;
     outline-width: .5rem;
 }
