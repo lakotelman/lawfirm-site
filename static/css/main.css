@@ -1,34 +1,64 @@
 body {
-    background-image: url("/static/given-images/nza_background.jpg") ;
+    background-image: url("/static/higher-res-images/highreswoodgrain.jpg");
+    background-size: cover;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container { 
+    padding:3rem;
+    position: relative;
     max-width: 1000px;
     margin: 0px auto;
     background-color: white;
 }
 
-/* HEADER START /*
-/* NAVIGATION START */
+/* HEADER START  */
+
+
 .sign-in { 
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    background-color: #bebebe;
+    width: 75px;
+    padding: 1rem;
+    border-bottom-left-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+    margin-right: 1.5rem;
 }
 
+.sign-in a { 
+    color: white;
+}
+.word-print-banner { 
+    margin: 2rem;
+}
 .word-print-banner img{ 
-    max-width: 100%;
+    max-width: 75%;
+}
+/* NAVIGATION START */
+
+nav { 
+    border-style: solid;
+    border-width: 2px 0;
 }
 
 nav ul{ 
     list-style-type: none;
-    justify-content: space-between;
-    padding: 0;
+    justify-content: space-evenly;
+    padding: 0;  
+    
 }
 
 nav a { 
-    justify-content: space-between;
+    text-transform: uppercase; 
 }
 
+.nav-divider { 
+    color: rgb(192, 192, 192);
+}
 /* NAVIGATION END */
 
 
@@ -64,12 +94,15 @@ nav a {
 } */
 
 a { 
- text-decoration: none;   
+ text-decoration: none;
+ color: black;
+ transition: .5s;  
 }
-/* 
+
 a:hover { 
-    
-} */
+ color: #90332D;
+ font-weight: 500;   
+}
 
 
 /* 
