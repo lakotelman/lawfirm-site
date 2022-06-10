@@ -100,8 +100,44 @@ footer hr {
     width: 100%;
 }
 
+.content-side-wrapper { 
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
 
+.sidebar { 
+    background-color: #90332D;
+    flex-basis: 20rem;
+    flex-grow: 1;
+    
+}
 
+.content { 
+    background-color: aquamarine;
+    flex-basis: 0;
+    flex-grow: 999; 
+    min-inline-size: 50%;
+    
+    
+}
+
+/* @media only screen and (max-width: 600px) {
+    .content-side-wrapper { 
+        flex-wrap: wrap;
+    }
+    
+} */
+
+.page-title{ 
+    max-width:60%;
+}
+
+.page-title img { 
+    
+    width: 75%;
+}
 /* h2 { 
     
 } */
