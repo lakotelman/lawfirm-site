@@ -83,21 +83,35 @@ nav a {
     width: 100%;
 }
 
-.content-side-grid { 
-    display: block;
+.content-side-wrapper { 
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
 }
 
 .sidebar { 
-    float: left;
     background-color: #90332D;
-    width: 25%;
+    flex-basis: 20rem;
+    flex-grow: 1;
+    
 }
 
 .content { 
-    float: right;
     background-color: aquamarine;
-    width: 70%;
+    flex-basis: 0;
+    flex-grow: 999; 
+    min-inline-size: 50%;
+    
+    
 }
+
+/* @media only screen and (max-width: 600px) {
+    .content-side-wrapper { 
+        flex-wrap: wrap;
+    }
+    
+} */
 
 .page-title{ 
     max-width:60%;
