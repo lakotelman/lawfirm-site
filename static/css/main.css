@@ -5,6 +5,25 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a { 
+ text-decoration: none;
+ color: black;
+ transition: .5s;  
+}
+
+a:hover { 
+ color: #90332D;
+ font-weight: 500;   
+}
+
+.white-heading { 
+    color:white;
+    margin: 0;
+    padding: .75rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
 .container { 
     padding:3rem;
     position: relative;
@@ -48,6 +67,7 @@ nav {
 nav ul{ 
     list-style-type: none;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 0;  
     
 }
@@ -60,9 +80,6 @@ nav a {
     color: rgb(192, 192, 192);
 }
 /* NAVIGATION END */
-
-/* HEADER BEGIN */
-
 /* HEADER END */
 
 /* FOOTER BEGIN */
@@ -90,8 +107,7 @@ footer hr {
 /* FOOTER END */
 
 
-/* UTILITIES */ 
-
+/* UTILITIES BEGIN */ 
 
 .row { 
     display: flex;
@@ -100,69 +116,92 @@ footer hr {
     width: 100%;
 }
 
+/* UTILITIES END */
+
+/* MAIN SECTIONS BEGIN */
 .content-side-wrapper { 
+    margin: 1.6rem 0;
     display:flex;
     flex-wrap: wrap;
     gap: 1rem;
+    align-items: flex-start;
     
 }
 
 .sidebar { 
-    background-color: #90332D;
+    background-image: linear-gradient(#90332D,#7b1912) ;
+    border-radius: .2rem;
     flex-basis: 20rem;
     flex-grow: 1;
-    
+    color: white;
+    padding: 1rem;
+}
+
+
+
+.sidebar-list { 
+    list-style-type: none;
+    padding: 0;
+    color: white;
+}
+
+.sidebar-list li { 
+    margin: 2rem 0;
+}
+.sidebar-list li a { 
+    color: white;
 }
 
 .content { 
-    background-color: aquamarine;
+    padding: .5rem 1.5rem 1.5rem 1.5rem;
     flex-basis: 0;
     flex-grow: 999; 
-    min-inline-size: 50%;
-    
-    
+    min-inline-size: 50%;  
 }
 
-/* @media only screen and (max-width: 600px) {
-    .content-side-wrapper { 
-        flex-wrap: wrap;
-    }
-    
-} */
+.title-heading { 
+    font-weight: 700;
+    background-color: #7b1912;
+    border-radius: .75rem;
+    margin: 1rem;
+}
 
 .page-title{ 
-    max-width:60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width:100%;
+    height: 150px;
+    background-image: url(/static/higher-res-images/attorneyspagetitleimage.jpg);
+    background-size: cover;
+    background-position-y: 250px;
+    outline-style: double;
+    outline-width: .5rem;
 }
 
-.page-title img { 
-    
-    width: 75%;
-}
-/* h2 { 
-    
-} */
+/* MAIN SECTIONS END/*
 
-/* h3 { 
-    
-} */
+/*PAGE SPECTIFIC BEGIN */
 
-a { 
- text-decoration: none;
- color: black;
- transition: .5s;  
+.attorneys-grid { 
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+
 }
 
-a:hover { 
- color: #90332D;
- font-weight: 500;   
+.attorney-card { 
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+.attorney-card ul { 
+    list-style-type: none;
+    padding: 0;
 }
 
 
-/* 
-.img-grid{ 
-    
-} */
-/* 
-.flex-row { 
-
-} */
