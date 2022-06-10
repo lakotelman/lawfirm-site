@@ -61,16 +61,33 @@ nav a {
 }
 /* NAVIGATION END */
 
+/* HEADER BEGIN */
 
+/* HEADER END */
 
+/* FOOTER BEGIN */
 
+footer ul {
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+}
 
+footer hr {
+    width: 100%;
+    border: solid 1px black;
+    margin: 0
+}
 
-/* HEADER END /*
+.foot-row {
+    margin: 0 20%
+}
 
 .footer { 
 
 }
+
+/* FOOTER END */
 
 
 /* UTILITIES */ 
