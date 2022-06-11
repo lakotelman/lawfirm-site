@@ -76,6 +76,10 @@ main div.row {
     margin: 1rem;
 }
 
+main div.col {
+    margin: 1rem; 
+}
+
 #sidebar-news {
     padding: 1rem;
 }
@@ -83,14 +87,12 @@ main div.row {
 #col-1 {
     justify-content: flex-start;
     max-width: 75%;
-    justify-content: space-between;
     align-items: center;
 }
 
 #col-2 {
     justify-content: flex-start;
     max-width: 25%;
-    justify-content: space-between;
     align-items: center;
 }
 
