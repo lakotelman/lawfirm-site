@@ -141,18 +141,16 @@ footer hr {
     flex-wrap: wrap;
     gap: 1rem;
     align-items: flex-start;
-    
 }
 
 .sidebar { 
     background-image: linear-gradient(#90332D,#7b1912) ;
     border-radius: .2rem;
-    flex-basis: 20rem;
+    flex-basis: 10rem;
     flex-grow: 1;
     color: white;
     padding: 1rem;
 }
-
 
 
 .sidebar-list { 
@@ -175,6 +173,10 @@ footer hr {
     min-inline-size: 50%;  
 }
 
+.content p { 
+    padding: .5rem 2.25rem;
+}
+
 .title-heading { 
     font-weight: 700;
     background-color: #7b1912;
@@ -195,6 +197,10 @@ footer hr {
     outline-width: .5rem;
 }
 
+.page-title-who { 
+    background-image: url(/static/higher-res-images/whowearetitleimage.jpg);
+}
+
 /* MAIN SECTIONS END/*
 
 /*PAGE SPECTIFIC BEGIN */
@@ -203,7 +209,9 @@ footer hr {
     display: flex; 
     flex-wrap: wrap;
     gap: 1.5rem;
+    column-gap: 2.5rem;
     margin-top: 1.5rem;
+    justify-content: space-evenly;
 
 }
 
@@ -220,4 +228,18 @@ footer hr {
     padding: 0;
 }
 
+#photo-grid {
+    justify-content: center;
+    gap: 2.5rem;
+} 
+
+#photo-grid img { 
+    object-fit: cover;
+    width: 288px;
+    height: 113px;
+    display: flex;
+    align-self: center;
+    outline-style: double;
+    outline-width: .5rem;
+}
 
