@@ -89,6 +89,9 @@ nav a {
         align-items: center;
         flex-wrap: nowrap;
     }
+    .row { 
+        flex-direction: column !important;
+    }
     .nav-divider { 
         display: none;
     }
@@ -225,10 +228,34 @@ footer hr {
     flex-grow: 1;
 }
 
+.bottom-sidebar img{ 
+    width: 100%;
+}
+
+.right-sidebar { 
+    background-image: none;
+    background-color: #BEBEBE;
+    padding: 1rem;
+    color: black;
+}
+
+.right-sidebar h3{ 
+    margin: 0px;
+    color: #7b1912;
+}
 .content {
     flex-basis: 0;
     flex-grow: 999;
     min-inline-size: 50%;
+}
+
+#narrow-side { 
+    width: 20%;
+
+}
+#between-two { 
+    width: 50%;
+    padding: .5rem;
 }
 
 .img-fluid {
@@ -265,6 +292,12 @@ footer hr {
 .page-title-who { 
     background-image: url(/static/higher-res-images/whowearetitleimage.jpg);
 }
+
+.page-title-contact { 
+    background-position:center;
+    background-image: url(/static/higher-res-images/contactustitleimage.jpg);
+}
+
 
 .page-title img {
     width: 75%;
