@@ -5,7 +5,17 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.container {
+
+.white-heading { 
+    color:white;
+    font-size: 1rem;
+    margin: 0;
+    padding: .75rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.container { 
     padding: 3rem;
     position: relative;
     max-width: 1000px;
@@ -52,7 +62,8 @@ nav {
 nav ul {
     list-style-type: none;
     justify-content: space-evenly;
-    padding: 0;
+    flex-wrap: wrap;
+    padding: 0;  
 }
 
 nav a {
@@ -62,6 +73,29 @@ nav a {
 .nav-divider {
     color: rgb(192, 192, 192);
 }
+@media only screen and (min-width:600px){ 
+    .row { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    nav ul { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .nav-divider { 
+        display: none;
+    }
+
+}
+/* NAVIGATION END */
+/* HEADER END */
 
 /* NAVIGATION END */
 
@@ -120,6 +154,50 @@ footer hr {
 
 /* UTILITIES */
 
+/* UTILITIES BEGIN */ 
+
+
+
+/* UTILITIES END */
+
+/* MAIN SECTIONS BEGIN */
+.content-side-wrapper { 
+    margin: 1.6rem 0;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.sidebar { 
+    background-image: linear-gradient(#90332D,#7b1912) ;
+    border-radius: .2rem;
+    flex-basis: 10rem;
+    flex-grow: 1;
+    color: white;
+    padding: 1rem;
+}
+
+
+.sidebar-list { 
+    list-style-type: none;
+    padding: 0;
+    color: white;
+}
+
+.sidebar-list li { 
+    margin: 2rem 0;
+}
+.sidebar-list li a { 
+    color: white;
+}
+
+.content { 
+    padding: .5rem 1.5rem 1.5rem 1.5rem;
+    flex-basis: 0;
+    flex-grow: 999; 
+    min-inline-size: 50%;  
+}
 .row {
     display: flex;
     flex-direction: row;
@@ -143,12 +221,11 @@ footer hr {
 .sidebar {
     background-color: #90332d;
     color: white;
-    flex-basis: 20rem;
+    flex-basis: 10rem;
     flex-grow: 1;
 }
 
 .content {
-    background-color: aquamarine;
     flex-basis: 0;
     flex-grow: 999;
     min-inline-size: 50%;
@@ -161,15 +238,32 @@ footer hr {
     vertical-align: bottom;
 }
 
-/* @media only screen and (max-width: 600px) {
-    .content-side-wrapper { 
-        flex-wrap: wrap;
-    }
-    
-} */
+.content p { 
+    padding: .5rem 2.25rem;
+}
 
-.page-title {
-    max-width: 60%;
+.title-heading { 
+    font-weight: 700;
+    background-color: #7b1912;
+    border-radius: .75rem;
+    margin: 1rem;
+}
+
+.page-title{ 
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width:100%;
+    height: 150px;
+    background-image: url(/static/higher-res-images/attorneyspagetitleimage.jpg);
+    background-size: cover;
+    background-position: 50%;
+    outline-style: double;
+    outline-width: .5rem;
+}
+
+.page-title-who { 
+    background-image: url(/static/higher-res-images/whowearetitleimage.jpg);
 }
 
 .page-title img {
@@ -180,9 +274,47 @@ footer hr {
     
 } */
 
-/* h3 { 
-    
-} */
+/* MAIN SECTIONS END/*
+
+/*PAGE SPECTIFIC BEGIN */
+
+.attorneys-grid { 
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    column-gap: 2.5rem;
+    margin-top: 1.5rem;
+    justify-content: space-evenly;
+
+}
+
+.attorney-card { 
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+.attorney-card ul { 
+    list-style-type: none;
+    padding: 0;
+}
+
+#photo-grid {
+    justify-content: center;
+    gap: 2.5rem;
+} 
+
+#photo-grid img { 
+    object-fit: cover;
+    width: 288px;
+    height: 113px;
+    display: flex;
+    align-self: center;
+    outline-style: double;
+    outline-width: .5rem;
+}
 
 a {
     text-decoration: none;
