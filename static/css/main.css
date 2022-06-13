@@ -154,14 +154,16 @@ main ul {
 
 #col-1 {
     justify-content: flex-start;
-    max-width: 75%;
+    max-width: calc(75% - 2rem);
+    width: 100%;
     flex: 75%;
     align-items: center;
 }
 
 #col-2 {
     justify-content: flex-start;
-    max-width: 25%;
+    max-width: calc(25% - 2rem);
+    width: 100%;
     flex: 25%;
     align-items: center;
 }
@@ -212,13 +214,36 @@ main ul {
     width: 100%;
 }
 
-.col {
+main div#col-1 ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main div#col-1 li {
+    width: 33%;
+    padding-bottom: .3rem;
+}
+
+main div#col-2 ul {
+    display: flex;
+    flex-direction: column;
+}
+
+main div#col-2 li {
+    padding-bottom: .3rem;
+}
+
+
+/* col class functionality replaced in
+col-1 and col-2 id's */
+
+/* .col {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex-basis: 100%;
     flex-grow: 1;
-}
+} */
 
 .content-side-wrapper {
     display: flex;
