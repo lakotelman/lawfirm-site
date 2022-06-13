@@ -6,8 +6,8 @@ body {
 }
 
 
-.white-heading { 
-    color:white;
+.white-heading {
+    color: white;
     font-size: 1rem;
     margin: 0;
     padding: .75rem;
@@ -15,7 +15,7 @@ body {
     font-weight: 400;
 }
 
-.container { 
+.container {
     padding: 3rem;
     position: relative;
     max-width: 1000px;
@@ -63,7 +63,7 @@ nav ul {
     list-style-type: none;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 0;  
+    padding: 0;
 }
 
 nav a {
@@ -73,8 +73,9 @@ nav a {
 .nav-divider {
     color: rgb(192, 192, 192);
 }
-@media only screen and (min-width:600px){ 
-    .row { 
+
+@media only screen and (min-width:600px) {
+    .row {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -83,12 +84,13 @@ nav a {
 }
 
 @media (max-width:600px) {
-    nav ul { 
+    nav ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
     }
+
     .row { 
         flex-direction: column !important;
     }
@@ -97,43 +99,11 @@ nav a {
     }
 
 }
+
 /* NAVIGATION END */
 /* HEADER END */
 
 /* NAVIGATION END */
-
-/* MAIN BEGIN */
-
-main hr {
-    width: 100%;
-    color: white;
-}
-
-main div.row {
-    margin: 1rem;
-}
-
-main div.col {
-    margin: 1rem; 
-}
-
-#sidebar-news {
-    padding: 1rem;
-}
-
-#col-1 {
-    justify-content: flex-start;
-    max-width: 75%;
-    align-items: center;
-}
-
-#col-2 {
-    justify-content: flex-start;
-    max-width: 25%;
-    align-items: center;
-}
-
-/* MAIN END */
 
 /* FOOTER BEGIN */
 
@@ -157,23 +127,60 @@ footer hr {
 
 /* UTILITIES */
 
-/* UTILITIES BEGIN */ 
+/* UTILITIES BEGIN */
 
 
 
 /* UTILITIES END */
 
 /* MAIN SECTIONS BEGIN */
-.content-side-wrapper { 
+main hr {
+    width: 100%;
+    color: white;
+}
+
+main div.row {
+    margin: 1rem;
+}
+
+main div.col {
+    margin: 1rem;
+}
+
+main ul {
+    list-style-type: none;
+}
+
+#sidebar-news {
+    padding: 1rem;
+}
+
+#col-1 {
+    justify-content: flex-start;
+    max-width: calc(75% - 2rem);
+    width: 100%;
+    flex: 75%;
+    align-items: center;
+}
+
+#col-2 {
+    justify-content: flex-start;
+    max-width: calc(25% - 2rem);
+    width: 100%;
+    flex: 25%;
+    align-items: center;
+}
+
+.content-side-wrapper {
     margin: 1.6rem 0;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     align-items: flex-start;
 }
 
-.sidebar { 
-    background-image: linear-gradient(#90332D,#7b1912) ;
+.sidebar {
+    background-image: linear-gradient(#90332D, #7b1912);
     border-radius: .2rem;
     flex-basis: 10rem;
     flex-grow: 1;
@@ -182,25 +189,27 @@ footer hr {
 }
 
 
-.sidebar-list { 
+.sidebar-list {
     list-style-type: none;
     padding: 0;
     color: white;
 }
 
-.sidebar-list li { 
+.sidebar-list li {
     margin: 2rem 0;
 }
-.sidebar-list li a { 
+
+.sidebar-list li a {
     color: white;
 }
 
-.content { 
+.content {
     padding: .5rem 1.5rem 1.5rem 1.5rem;
     flex-basis: 0;
-    flex-grow: 999; 
-    min-inline-size: 50%;  
+    flex-grow: 999;
+    min-inline-size: 50%;
 }
+
 .row {
     display: flex;
     flex-direction: row;
@@ -208,12 +217,36 @@ footer hr {
     width: 100%;
 }
 
-.col {
+main div#col-1 ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main div#col-1 li {
+    width: 33%;
+    padding-bottom: .3rem;
+}
+
+main div#col-2 ul {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
 }
+
+main div#col-2 li {
+    padding-bottom: .3rem;
+}
+
+
+/* col class functionality replaced in
+col-1 and col-2 id's */
+
+/* .col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    flex-grow: 1;
+} */
 
 .content-side-wrapper {
     display: flex;
@@ -265,22 +298,22 @@ footer hr {
     vertical-align: bottom;
 }
 
-.content p { 
+.content p {
     padding: .5rem 2.25rem;
 }
 
-.title-heading { 
+.title-heading {
     font-weight: 700;
     background-color: #7b1912;
     border-radius: .75rem;
     margin: 1rem;
 }
 
-.page-title{ 
+.page-title {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    width:100%;
+    width: 100%;
     height: 150px;
     background-image: url(/static/higher-res-images/attorneyspagetitleimage.jpg);
     background-size: cover;
@@ -289,7 +322,7 @@ footer hr {
     outline-width: .5rem;
 }
 
-.page-title-who { 
+.page-title-who {
     background-image: url(/static/higher-res-images/whowearetitleimage.jpg);
 }
 
@@ -311,8 +344,8 @@ footer hr {
 
 /*PAGE SPECTIFIC BEGIN */
 
-.attorneys-grid { 
-    display: flex; 
+.attorneys-grid {
+    display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     column-gap: 2.5rem;
@@ -321,15 +354,15 @@ footer hr {
 
 }
 
-.attorney-card { 
+.attorney-card {
     display: flex;
     gap: 1rem;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 
 }
 
-.attorney-card ul { 
+.attorney-card ul {
     list-style-type: none;
     padding: 0;
 }
@@ -337,9 +370,9 @@ footer hr {
 #photo-grid {
     justify-content: center;
     gap: 2.5rem;
-} 
+}
 
-#photo-grid img { 
+#photo-grid img {
     object-fit: cover;
     width: 288px;
     height: 113px;
