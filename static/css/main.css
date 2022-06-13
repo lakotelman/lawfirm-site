@@ -188,6 +188,14 @@ main ul {
     padding: 1rem;
 }
 
+.side-bar-long-lines { 
+    background-image: linear-gradient(#90332D,#7b1912) ;
+    border-radius: .2rem;
+    flex-basis: 15rem;
+    flex-grow: 1;
+    color: white;
+    padding: 1rem;
+}
 
 .sidebar-list {
     list-style-type: none;
@@ -201,6 +209,15 @@ main ul {
 
 .sidebar-list li a {
     color: white;
+}
+
+.sidebar-embedded-list { 
+    list-style-type: none;
+    margin: .5rem;
+}
+.sidebar-embedded-list li{ 
+    margin: 0px;
+    padding: none;
 }
 
 .content {
@@ -329,6 +346,11 @@ col-1 and col-2 id's */
 .page-title-contact { 
     background-position:center;
     background-image: url(/static/higher-res-images/contactustitleimage.jpg);
+}
+
+.page-title-what-we-do { 
+    background-position: center;
+    background-image: url(/static/higher-res-images/whatwedotitleimage.jpg);
 }
 
 
